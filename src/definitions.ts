@@ -9,3 +9,5 @@ export interface ZeroConfPlugin {
   unwatch(options: { type:string, domain:string }): Promise<any>;
 
 }
+
+export var Browser : ZeroConfPlugin;
