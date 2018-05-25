@@ -1,19 +1,15 @@
 declare global  {
     interface PluginRegistry {
-        ZeroConfPlugin?: ZeroConfPlugin;
+        ZeroconfPlugin?: ZeroConfPlugin;
     }
 }
 export interface ZeroConfPlugin {
     watch(options: {
         type: string;
         domain: string;
-    }): Promise<{
-        value: string;
-    }>;
+    }): Promise<any>;
     unwatch(options: {
         type: string;
         domain: string;
-    }): Promise<{
-        value: string;
-    }>;
+    }): Promise<any>;
 }
