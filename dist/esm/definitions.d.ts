@@ -13,3 +13,4 @@ export interface ZeroConfPlugin {
         domain: string;
     }): Promise<any>;
 }
+export declare var Browser: ZeroConfPlugin;
