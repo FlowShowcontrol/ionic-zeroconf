@@ -1,9 +1,9 @@
 {
   "name": "ionic-zeroconf",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Bonjour discovery for capacitor applications",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
   "homepage": "http://www.github.com/FlowShowcontrol/",
   "scripts": {
     "build": "npm run clean && tsc",
