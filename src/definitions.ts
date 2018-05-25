@@ -1,9 +1,11 @@
 declare global {
   interface PluginRegistry {
-    EchoPlugin?: EchoPlugin;
+    ZeroconfPlugin?: ZeroConfPlugin;
   }
 }
 
-export interface EchoPlugin {
-  echo(options: { value: string }): Promise<{value: string}>;
+export interface ZeroConfPlugin {
+  watch(options: { type:string, domain:string }): Promise<any>;
+  unwatch(options: { type:string, domain:string }): Promise<any>;
+
 }
