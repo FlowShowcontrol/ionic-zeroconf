@@ -1,6 +1,6 @@
 declare global  {
     interface PluginRegistry {
-        ZeroconfPlugin?: ZeroConfPlugin;
+        ZeroConfPlugin?: ZeroConfPlugin;
     }
 }
 export interface ZeroConfPlugin {
