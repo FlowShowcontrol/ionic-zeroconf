@@ -1,6 +1,6 @@
 {
   "name": "ionic-zeroconf",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Bonjour discovery for capacitor applications",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",

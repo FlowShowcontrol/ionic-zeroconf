@@ -9,7 +9,7 @@ import Capacitor
 public class ZeroConfPlugin: CAPPlugin {
     
     //Collection of our watchers
-    var browsers: [String: Browser]!
+    var browsers: [String: Browser]! = [:];
     
     @objc func watch(_ call: CAPPluginCall) {
         
