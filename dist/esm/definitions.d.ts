@@ -1,6 +1,6 @@
 declare global  {
     interface PluginRegistry {
-        ZeroconfPlugin?: ZeroConfPlugin;
+        ZeroConfPlugin?: ZeroConfPlugin;
     }
 }
 export interface ZeroConfPlugin {
@@ -13,3 +13,4 @@ export interface ZeroConfPlugin {
         domain: string;
     }): Promise<any>;
 }
+export declare var Browser: ZeroConfPlugin;

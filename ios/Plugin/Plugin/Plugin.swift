@@ -95,6 +95,9 @@ public class ZeroConfPlugin: CAPPlugin {
             
             browser.searchForServices(ofType: self.type, inDomain: self.domain);
             
+            browser.schedule(in: RunLoop.current, forMode: .commonModes)
+            
+            RunLoop.current.run(until: Date.init(timeIntervalSinceNow: 300))
         }
         
         func unwatch() {
