@@ -140,7 +140,11 @@ public class ZeroConfPlugin: CAPPlugin {
             print("ZeroConf: netService:didResolveAddress:\(netService)");
             #endif
             
+            var service = jsonifyService(netService);
             
+            service["action"] = "ADD";
+            
+            commandDelegate?.resolve(service);
         }
         
         @objc func netService(_ netService: NetService, didNotResolve errorDict: [String : NSNumber]) {
